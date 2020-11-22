@@ -46,29 +46,4 @@ var callback = (entries, observer) => {
     video.addEventListener("ended", addPlayedClass);
   });
 
-var modal = document.getElementById("popout");
-var btn = document.getElementById("open");
-var span = document.getElementById("close");
-
-btn.addEventListener(
-  "click",
-  function(event) {
-    modal.style.display = "block";
-  },
-  false
-);
-
-btn.onclick = function() {
-    modal.style.display = "block";
-  };
-  
-  span.onclick = function() {
-    modal.style.display = "none";
-  };
-  
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
   
