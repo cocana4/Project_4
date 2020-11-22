@@ -18,8 +18,8 @@ img {
   width: 100%;
 }
 
-.fancy-video {
-  margin-top: 20vh;
+section {
+  margin: 20vh 0;
 }
 
 .fancy-video .replay {
@@ -53,83 +53,96 @@ img {
   height: 20px;
 }
 
-h1 { 
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+h2 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-top: 20px;
 }
 
-p { 
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 3;
-    padding: 45px;
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 3;
+  padding: 45px;
 }
 
-div.centered {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
+h1 {
+  text-align: center;
+  margin: 0;
+  color: white;
+  font-size: 35px;
+  font-family: Arial, "Segoe UI";
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  padding: 0 20px;
+}
+
+header {
+  min-height: 40vh;
+  background: url(./../images/playstation-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+nav {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003087;
+}
+
+a {
+  text-decoration: none;
+  padding: 42px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: white;
+  font-style: italic;
+  text-shadow: black;
+}
+
+div {
+  display: block;
+}
+
+div > p {
+  display: inline;
+  margin: 0;
+  text-align: center;
+  color: #003087;
+  text-decoration: none;
+}
+
+div > p > a {
+  display: block;
+  margin: 0;
+  text-align: center;
+  background-color: #003087;
+  text-decoration: none;
+  padding: 0px;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+@media (max-width: 767px) {
+  div.centered {
     font-size: 35px;
-    font-family: Arial, 'Segoe UI';
-    font-weight: bold;
-    text-shadow: 1px 1px 2px black;
   }
 
-
-  .container { 
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 100%;
-}
-
-nav{
-    height: 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #003087;
-}
-
-a { 
-    text-decoration: none;
-    padding: 42px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: white;
-    font-style: italic;
-    text-shadow:black;
-}
-
-div { 
-    display: block;
-}
-
-div > p { 
-    display: inline;
-    margin: 0;
-    text-align: center;
-    color: #003087;
-    text-decoration: none;
-}
-
-div > p > a{ 
-    display: block;
-    margin: 0;
-    text-align: center;
-    background-color: #003087;
-    text-decoration: none;
-    padding: 0px;
-    font-size: 15px;
-    color: white;
-    padding: 10px;
-    border-radius: 25px;
-}
-
-@media (max-width: 767px){
-    div.centered{ 
-        font-size: 35px;
-    }
+  nav {
+    display: none;
+  }
 }
